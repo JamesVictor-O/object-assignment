@@ -29,6 +29,7 @@ function WemaBank(firstName,lastName,Age,Nin,){
     }
 
     // function for depositing money
+
     this.depositMoney=function(amount){
         this.accountBalance += amount;
     }
@@ -54,6 +55,27 @@ function WemaBank(firstName,lastName,Age,Nin,){
 
 }
 
+
+// can only be access by someone with account 
+
+WemaBank.prototype={
+    //  function to request for a loan
+    requestLoan:function(amount){
+        if(amount <= lonableAmount){
+            if(amount <= 5000){
+                this.accountBalance += amount
+            }else{
+                console.log('sorry we cant offer you this loan amount at the moment')
+            }
+        }else{
+            console.log("sorry we are current out of loan capital at the moment")
+        }
+    }
+}
+
+
+
+
 const account1=new WemaBank("James","victor",23,2121104418);
 const account2=new WemaBank("John","Ochula",24,2121104418);
 
@@ -62,6 +84,5 @@ account1.depositMoney(6000);
 account1.checkBalance()
 account1.transferMoney(account2,5000)
 account1.checkBalance()
-
 
 account2.checkBalance()

@@ -1,0 +1,6 @@
+{
+    "editor.fontSize": 13,
+    "editor.tabSize": 3,
+    "editor.formatOnType": true,
+    "editor.experimentalInlineEdit.showToolbar": "onHover"
+}
