@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="color.css">
 </head>
 <body>
-     <head>Hello</head>
-
-     <script src="script.js"></script>
+  <div>
+    <head >hello</head>
+    <p>background color changer</p>
+    <button id="button2" class="bg-red-300 border-2 border text-white " onclick="openNavBar()">open</button>
+    <div id="menuBar" class="absolute bg-white w-[50%] h-screen hidden">
+      hello
+    </div>
+    <button id="bottonId" onclick="changeBackground()" class="bg-white border p-1 rounded">Change background</button>
+  </div>
+     
+     <script src="colorScript.js"></script>
 </body>
 </html>

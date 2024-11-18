@@ -79,10 +79,47 @@ WemaBank.prototype={
 const account1=new WemaBank("James","victor",23,2121104418);
 const account2=new WemaBank("John","Ochula",24,2121104418);
 
-account1.checkBalance()
-account1.depositMoney(6000);
-account1.checkBalance()
-account1.transferMoney(account2,5000)
-account1.checkBalance()
+// account1.checkBalance()
+// account1.depositMoney(6000);
+// account1.checkBalance()
+// account1.transferMoney(account2,5000)
+// account1.checkBalance()
 
-account2.checkBalance()
+// account2.checkBalance()
+
+// console.log(this)
+
+
+
+
+// function expression
+
+let arrayOfNumbers=[17,35,6,81,2,55,10,14,7,28]
+
+function HigestNumber() {
+    let [bigNumb,,]=arrayOfNumbers.sort((a,b)=> b-a).slice(0,3)
+    return bigNumb;
+}
+
+
+// console.log(HigestNumber())
+// console.log(arrayOfNumbers)
+
+
+function LongestString(value) {
+    let longestString = []
+    for (i = 0; i < value.length; i++){
+
+    }
+}
+
+let array = ["jam", "vict", "ochula", "lebronj"]
+let sorted = array.sort((a, b) => {
+    return b.length - a.length
+})
+console.log(sorted[0])
+
+
+// --------------------------
+
+
